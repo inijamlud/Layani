@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Layani</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_order">Order</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Layani" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_red</item>
+        <item name="colorPrimaryVariant">@color/red_200</item>
+        <item name="colorOnPrimary">@color/red_100</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/red_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:fontFamily">@font/fira_sans</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="textmenu">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_FA</item>
+        <item name="android:fontFamily">@font/fira_sans</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="textmenu_black">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_2</item>
+        <item name="android:fontFamily">@font/fira_sans</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="subtextmenu_black">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_second</item>
+        <item name="android:fontFamily">@font/fira_sans</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="chip_cek" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="checkedIcon">@drawable/ic_baseline_check_circle_24</item>
+        <item name="android:textColor">@color/mtrl_choice_chip_text_color</item>
+        <item name="chipBackgroundColor">@color/mtrl_choice_chip_background_color</item>
+    </style>
+    <style name="btn" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/main_red</item>
+        <item name="strokeWidth">10dp</item>
+        <item name="android:textColor">@color/red_100</item>
+    </style>
+
+
+
+
+</resources>

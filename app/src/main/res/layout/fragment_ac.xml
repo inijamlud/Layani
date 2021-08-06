@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-115dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="549dp"
+        android:src="@drawable/img_actionbar" />
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1">
+
+                <LinearLayout
+                    android:id="@+id/menu_ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradeint2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/img_ac" />
+
+                        <TextView
+                            style="@style/textmenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Service AC" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/subtitle"
+                style="@style/subtextmenu_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Punya AC tapi rusak? Mau di-service?" />
+
+            <TextView
+                style="@style/textmenu_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Lokasi"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:background="@drawable/boarder"
+                android:hint="Masukan Lokasi Anda"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/textmenu_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Layanan"
+                android:textSize="20dp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_ac1"
+                    style="@style/chip_cek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="@color/mtrl_choice_chip_text_color"
+                    app:chipBackgroundColor="@color/mtrl_choice_chip_background_color"
+                    app:rippleColor="@color/mtrl_choice_chip_ripple_color"
+                    android:clickable="false"
+                    android:text="Cleaning" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_ac2"
+                    style="@style/chip_cek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bongkar Pasang" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_ac3"
+                    style="@style/chip_cek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isi Freon" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                style="@style/textmenu_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Waktu Pelayanan"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/radio_flat_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="1 Jam"
+                    android:textColor="@color/radio_flat_text_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/radio_flat_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="2 Jam"
+                    android:textColor="@color/radio_flat_text_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_flat_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="3 Jam"
+                    android:textColor="@color/radio_flat_text_selector" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/textmenu_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kontak"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/kontak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/boarder"
+                android:hint="Masukan Nomor Handphone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btn_pesan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Order Sekarang"
+                android:textColor="@color/white_FA" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
